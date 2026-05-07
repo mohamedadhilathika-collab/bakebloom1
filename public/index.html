@@ -3,216 +3,360 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0"
-    >
+<title>BakeBloom</title>
 
-    <title>BakeBloom</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
+<!-- PREMIUM NAVBAR -->
 
-        <h1 class="logo">BakeBloom</h1>
+<nav class="navbar">
 
-        <button class="nav-btn">
-            Explore Recipes
-        </button>
+    <div class="logo">
+        BakeBloom
+    </div>
 
-    </nav>
+    <div class="nav-links">
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+        <a href="#">Home</a>
+        <a href="#featured">Recipes</a>
+        <a href="#featured">Trending</a>
+        <a href="#featured">Desserts</a>
 
-        <div class="hero-overlay">
+    </div>
 
-            <h2>
-                Bake Beautiful Desserts at Home
-            </h2>
+    <button class="nav-btn">
+        Explore Recipes
+    </button>
 
-            <p>
-                Beginner-friendly baking recipes with
-                step-by-step guidance.
-            </p>
+</nav>
 
-            <button class="hero-btn">
+<!-- PREMIUM HERO -->
+
+<section class="hero">
+
+    <div class="hero-gradient"></div>
+
+    <div class="hero-overlay">
+
+        <div class="hero-badge">
+            ✨ Premium Baking Experience
+        </div>
+
+        <h1>
+
+            Bake Stunning
+            <span>Desserts</span>
+            Like A Professional
+
+        </h1>
+
+        <p class="hero-text">
+
+            Discover luxurious beginner-friendly baking recipes with
+            cinematic visuals, bakery-style textures, and step-by-step guidance.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="hero-btn primary-btn">
                 Start Baking
+            </button>
+
+            <button class="hero-btn secondary-btn">
+                View Recipes
             </button>
 
         </div>
 
-    </section>
+        <div class="hero-stats">
 
-    <!-- RECIPE SECTION -->
-    <section class="recipes">
+            <div class="stat-card">
 
-        <h2 class="section-title">
+                <h3>50+</h3>
+                <p>Premium Recipes</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>10K+</h3>
+                <p>Happy Bakers</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>4.9★</h3>
+                <p>Recipe Ratings</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED RECIPES -->
+
+<section class="featured" id="featured">
+
+    <div class="section-header">
+
+        <p class="section-tag">
             Trending Recipes
+        </p>
+
+        <h2>
+            Featured Bakery Collection
         </h2>
 
-            <!-- CARD 1 -->
-           <a href="/recipes/brownie.html" class="recipe-link">
-
-<div class="recipe-card">
-
-    <img 
-        src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200"
-        class="recipe-image"
-        alt="Chocolate Brownies"
-    >
-
-    <div class="recipe-content">
-
-        <h3>Chocolate Brownies</h3>
-
         <p>
-            Soft and gooey beginner brownies.
+            Discover luxurious bakery-style recipes crafted for beginners.
         </p>
 
     </div>
 
-</div>
+    <div class="recipe-grid">
 
-</a>
+        <!-- BROWNIES -->
 
-            <!-- CARD 2 -->
-            <a href="/recipes/vanilla-cake.html" class="recipe-link">
+        <a href="/recipes/brownie.html" class="recipe-link">
 
-<div class="recipe-card">
+            <div class="recipe-card">
 
-    <img 
-        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200"
-        class="recipe-image"
-    >
+                <div class="recipe-badge">
+                    Best Seller
+                </div>
 
-    <div class="recipe-content">
+                <img 
+                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Brownies"
+                >
 
-        <h3>Vanilla Cake</h3>
+                <div class="recipe-content">
 
-        <p>
-            Easy fluffy vanilla sponge cake.
-        </p>
-    
+                    <div class="recipe-top">
+
+                        <span>Beginner</span>
+                        <span>30 mins</span>
+
+                    </div>
+
+                    <h3>Chocolate Brownies</h3>
+
+                    <p>
+                        Rich gooey brownies with luxurious chocolate flavor and fudgy texture.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- VANILLA CAKE -->
+
+        <a href="/recipes/vanilla-cake.html" class="recipe-link">
+
+            <div class="recipe-card">
+
+                <div class="recipe-badge">
+                    Popular
+                </div>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Vanilla Cake"
+                >
+
+                <div class="recipe-content">
+
+                    <div class="recipe-top">
+
+                        <span>Soft</span>
+                        <span>35 mins</span>
+
+                    </div>
+
+                    <h3>Vanilla Cake</h3>
+
+                    <p>
+                        Fluffy vanilla sponge cake with premium bakery-style texture.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- COOKIES -->
+
+        <a href="/recipes/cookies.html" class="recipe-link">
+
+            <div class="recipe-card">
+
+                <div class="recipe-badge">
+                    Easy
+                </div>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Cookies"
+                >
+
+                <div class="recipe-content">
+
+                    <div class="recipe-top">
+
+                        <span>Crispy</span>
+                        <span>12 mins</span>
+
+                    </div>
+
+                    <h3>Butter Cookies</h3>
+
+                    <p>
+                        Crispy buttery cookies with rich homemade bakery flavor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- CUPCAKES -->
+
+        <a href="/recipes/cupcake.html" class="recipe-link">
+
+            <div class="recipe-card">
+
+                <div class="recipe-badge">
+                    Trending
+                </div>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Cupcakes"
+                >
+
+                <div class="recipe-content">
+
+                    <div class="recipe-top">
+
+                        <span>Bakery Style</span>
+                        <span>18 mins</span>
+
+                    </div>
+
+                    <h3>Vanilla Cupcakes</h3>
+
+                    <p>
+                        Soft creamy cupcakes topped with smooth vanilla frosting.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- RED VELVET -->
+
+        <a href="/recipes/red-velvet.html" class="recipe-link">
+
+            <div class="recipe-card">
+
+                <div class="recipe-badge">
+                    Luxury
+                </div>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Red Velvet Cake"
+                >
+
+                <div class="recipe-content">
+
+                    <div class="recipe-top">
+
+                        <span>Premium</span>
+                        <span>35 mins</span>
+
+                    </div>
+
+                    <h3>Red Velvet Cake</h3>
+
+                    <p>
+                        Moist red velvet cake layered with cream cheese frosting.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+        <!-- DONUTS -->
+
+        <a href="/recipes/donuts.html" class="recipe-link">
+
+            <div class="recipe-card">
+
+                <div class="recipe-badge">
+                    Chocolate
+                </div>
+
+                <img 
+                    src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200"
+                    class="recipe-image"
+                    alt="Donuts"
+                >
+
+                <div class="recipe-content">
+
+                    <div class="recipe-top">
+
+                        <span>Soft</span>
+                        <span>15 mins</span>
+
+                    </div>
+
+                    <h3>Chocolate Donuts</h3>
+
+                    <p>
+                        Soft fluffy donuts coated in glossy chocolate glaze.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
     </div>
 
-</div>
-
-</a>                
-
-            <!-- CARD 3 -->
-           <a href="/recipes/cookies.html" class="recipe-link">
-
-<div class="recipe-card">
-
-    <img 
-        src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1200"
-        class="recipe-image"
-    >
-
-    <div class="recipe-content">
-
-        <h3>Butter Cookies</h3>
-
-        <p>
-            Crispy homemade bakery cookies.
-        </p>
-
-    </div>
-
-</div>
-
-</a>
-    
-            <!-- CUPCAKES -->
-
-<a href="/recipes/cupcake.html" class="recipe-link">
-
-    <div class="recipe-card">
-
-        <img 
-            src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1200"
-            class="recipe-image"
-            alt="Vanilla Cupcakes"
-        >
-
-        <div class="recipe-content">
-
-            <h3>Vanilla Cupcakes</h3>
-
-            <p>
-                Soft bakery-style cupcakes for beginners.
-            </p>
-
-        </div>
-
-    </div>
-
-</a> 
-
-             <!-- RED VELVET -->
-
-<a href="/recipes/red-velvet.html" class="recipe-link">
-
-    <div class="recipe-card">
-
-        <img 
-            src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?q=80&w=1200"
-            class="recipe-image"
-            alt="Red Velvet Cake"
-        >
-
-        <div class="recipe-content">
-
-            <h3>Red Velvet Cake</h3>
-
-            <p>
-                Moist bakery-style red velvet cake with cream cheese frosting.
-            </p>
-
-        </div>
-
-    </div>
-
-</a>             
-
-             <!-- DONUTS -->
-
-<a href="/recipes/donuts.html" class="recipe-link">
-
-    <div class="recipe-card">
-
-        <img 
-            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200"
-            class="recipe-image"
-            alt="Chocolate Donuts"
-        >
-
-        <div class="recipe-content">
-
-            <h3>Chocolate Donuts</h3>
-
-            <p>
-                Soft bakery-style donuts with rich chocolate glaze.
-            </p>
-
-        </div>
-
-    </div>
-
-</a>
-
-    </section>
-
-    <script src="script.js"></script>
+</section>
 
 </body>
 </html>
-       
