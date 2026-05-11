@@ -626,3 +626,33 @@ body{
     }
 
 }
+  
+img{
+    max-width:100%;
+    height:auto;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.recipe-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .recipe-content h3{
+        font-size:1.5rem;
+    }
+
+    .navbar{
+        padding:15px;
+    }
+
+}
